@@ -1,0 +1,13 @@
+Databases:
+  Sample:
+    - ./{uri}.wav
+
+Protocols:
+  Sample:
+    SpeakerDiarization:
+      Debug:
+        scope: file
+        train:
+          uri: ./uris.lst
+          annotation: ./{uri}.rttm
+          annotated: ./{uri}.uem
